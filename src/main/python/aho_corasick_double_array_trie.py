@@ -110,14 +110,14 @@ class AhoCorasickDoubleArrayTrie:
 
         for i in range(pos, length):
             p = b + self.key_chars[i] + 1
-            if b == self._check[p]
+            if b == self._check[p]:
                 b = self._base[p]
             else:
                 return result
 
         p = b
         n = self._base[p]
-        if b == self._check[p] and n < 0
-            result = -n -1
+        if b == self._check[p] and n < 0:
+            result = -n - 1
 
         return result
